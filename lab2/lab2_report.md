@@ -13,4 +13,9 @@ Date of finished:
 2. Создаём deployment по образу выше и 2 реплики к нему
  ![image](https://user-images.githubusercontent.com/116584865/205901750-145de126-dd45-4b21-978a-3c8e9be7dacb.png)
  ![image](https://user-images.githubusercontent.com/116584865/205902281-8a7e57e8-b6ea-4a28-8be0-5d437df5d540.png)
+ Пересоздаём деплой декларативным подходом и так же создаем сервис loadbalancer
+![image](https://user-images.githubusercontent.com/116584865/205957109-b54f4ace-829f-464b-802b-8b7d7df0c1cd.png)
+![image](https://user-images.githubusercontent.com/116584865/205957375-24532f09-4e61-4ab4-a612-83ba36c20d4f.png)
+
+
 
