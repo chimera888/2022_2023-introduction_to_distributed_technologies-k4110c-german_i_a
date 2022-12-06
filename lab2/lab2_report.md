@@ -7,3 +7,10 @@ Author: German Ilya Andreevich
 Lab: Lab2
 Date of create: 03.12.2022
 Date of finished: 
+
+1. Скачиваем образ контейнера "ifilyaninitmo/itdt-contained-frontend:master"
+![image](https://user-images.githubusercontent.com/116584865/205890505-8ffd366e-22b2-4d9b-8acd-dfe1333c1719.png)
+2. Создаём deployment по образу выше и 2 реплики к нему
+ ![image](https://user-images.githubusercontent.com/116584865/205901750-145de126-dd45-4b21-978a-3c8e9be7dacb.png)
+ ![image](https://user-images.githubusercontent.com/116584865/205902281-8a7e57e8-b6ea-4a28-8be0-5d437df5d540.png)
+
