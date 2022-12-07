@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lr3configmap
+data:
+  username: "Ilya German"
+  company: "ITMO"
