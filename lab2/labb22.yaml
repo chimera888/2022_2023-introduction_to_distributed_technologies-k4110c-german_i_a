@@ -18,7 +18,8 @@ spec:
       - name: http
         image: ifilyaninitmo/itdt-contained-frontend:master
         ports: 
-        - containerPort: 3000
+        - name: custom-port
+          containerPort: 3000
         env: 
         - name: REACT_APP_USERNAME 
           value: "Ilya German" 
