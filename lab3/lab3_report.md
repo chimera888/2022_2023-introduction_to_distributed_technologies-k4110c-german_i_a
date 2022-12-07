@@ -21,4 +21,11 @@ Date of finished:
 ![image](https://user-images.githubusercontent.com/116584865/206284453-67f8c5a9-3de9-4ce6-9113-2bcf259c6503.png)
 7. добавляем IP адрес ingress и FQDN, то есть 127.0.0.1, example.com в hosts файл по пути C:\Windows\System32\drivers\etc
 ![image](https://user-images.githubusercontent.com/116584865/206286024-412f6070-a542-4e9c-9944-c4f0731c0d8e.png)
+8. Пытаемся подключиться к контейнеру
+![image](https://user-images.githubusercontent.com/116584865/206290229-76f8a58b-e234-4cbf-ab11-4c23a2da9b04.png)
+Получаем следующий результат:
+![image](https://user-images.githubusercontent.com/116584865/206291174-3652ea5e-6113-4965-975a-4925c0142d8e.png)
+9. Пробуем убрать IP address и FQDN из файла hosts
+Получаем следующий результат:
+![image](https://user-images.githubusercontent.com/116584865/206291348-239a8361-5310-46d1-baf7-eed962b72190.png)
 
