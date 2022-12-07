@@ -13,3 +13,5 @@ Date of finished:
 ![image](https://user-images.githubusercontent.com/116584865/206219569-20f02509-e06f-4030-8dba-82c38ae6dbf9.png)
 3. Создаём сервис
 ![image](https://user-images.githubusercontent.com/116584865/206220556-e808337f-f032-42dc-98d6-efedf6aacc7f.png)
+4. Подключаем ingress 
+![image](https://user-images.githubusercontent.com/116584865/206226499-c445a1c4-af7e-4832-9ee1-4503a51edbd9.png)
