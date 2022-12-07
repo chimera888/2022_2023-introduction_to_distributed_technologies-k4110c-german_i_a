@@ -16,6 +16,8 @@ Date of finished:
  Пересоздаём деплой декларативным подходом и так же создаем сервис loadbalancer
 ![image](https://user-images.githubusercontent.com/116584865/205957109-b54f4ace-829f-464b-802b-8b7d7df0c1cd.png)
 ![image](https://user-images.githubusercontent.com/116584865/205957375-24532f09-4e61-4ab4-a612-83ba36c20d4f.png)
+После множества попыток, поды находятся в состоянии ImagePullBackOff и не собираются работать. Вроде как проблема с образом.
+![image](https://user-images.githubusercontent.com/116584865/206164288-f6f9fc0b-62c5-41fe-af7a-decd83223524.png)
 
 
 
