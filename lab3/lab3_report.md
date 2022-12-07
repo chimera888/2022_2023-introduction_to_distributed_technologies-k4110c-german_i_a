@@ -17,3 +17,4 @@ Date of finished:
 ![image](https://user-images.githubusercontent.com/116584865/206226499-c445a1c4-af7e-4832-9ee1-4503a51edbd9.png)
 5. При помощи утилиты mkcert генерируем сертификат и ключ к нему
 ![image](https://user-images.githubusercontent.com/116584865/206274541-818247e1-1687-4366-ac3b-ca1668fc5b9b.png)
+6. 
