@@ -1,7 +1,7 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata: 
-  name: laboratornaya 2
+  name: laboratornaya2
   labels: 
     app: lab2-web-app
 spec: 
