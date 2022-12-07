@@ -17,4 +17,8 @@ Date of finished:
 ![image](https://user-images.githubusercontent.com/116584865/206226499-c445a1c4-af7e-4832-9ee1-4503a51edbd9.png)
 5. При помощи утилиты mkcert генерируем сертификат и ключ к нему
 ![image](https://user-images.githubusercontent.com/116584865/206274541-818247e1-1687-4366-ac3b-ca1668fc5b9b.png)
-6. 
+6. В манифесте ingress вставляем сгенерированный host "example.com", деплоим ингресс
+![image](https://user-images.githubusercontent.com/116584865/206284453-67f8c5a9-3de9-4ce6-9113-2bcf259c6503.png)
+7. добавляем IP адрес ingress и FQDN, то есть 127.0.0.1, example.com в hosts файл по пути C:\Windows\System32\drivers\etc
+![image](https://user-images.githubusercontent.com/116584865/206286024-412f6070-a542-4e9c-9944-c4f0731c0d8e.png)
+
