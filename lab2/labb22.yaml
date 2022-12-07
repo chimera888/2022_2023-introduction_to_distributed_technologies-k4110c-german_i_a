@@ -16,7 +16,7 @@ spec:
     spec: 
       containers: 
       - name: http
-        image: ifilyaninitmo/itdt-contained-frontend:master
+        image: docker.io/ifilyaninitmo/itdt-contained-frontend:master
         ports: 
         - containerPort: 3000
         env: 
