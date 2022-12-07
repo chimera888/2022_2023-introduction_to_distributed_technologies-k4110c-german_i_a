@@ -1,7 +1,7 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata: 
-  name: deployment
+  name: laboratornaya 2
   labels: 
     app: lab2-web-app
 spec: 
@@ -18,8 +18,7 @@ spec:
       - name: http
         image: ifilyaninitmo/itdt-contained-frontend:master
         ports: 
-        - name: custom-port
-          containerPort: 3000
+        - containerPort: 3000
         env: 
         - name: REACT_APP_USERNAME 
           value: "Ilya German" 
