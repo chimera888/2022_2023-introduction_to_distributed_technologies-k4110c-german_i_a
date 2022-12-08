@@ -29,4 +29,5 @@ Date of finished:
 Получаем следующий результат:
 ![image](https://user-images.githubusercontent.com/116584865/206291348-239a8361-5310-46d1-baf7-eed962b72190.png)
 Схема организации:
+![image](https://user-images.githubusercontent.com/116584865/206495244-70a969db-75ad-435d-9cc7-dbce6a8974fb.png)
 
