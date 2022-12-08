@@ -28,4 +28,5 @@ Date of finished:
 9. Пробуем убрать IP address и FQDN из файла hosts
 Получаем следующий результат:
 ![image](https://user-images.githubusercontent.com/116584865/206291348-239a8361-5310-46d1-baf7-eed962b72190.png)
+Схема организации:
 
