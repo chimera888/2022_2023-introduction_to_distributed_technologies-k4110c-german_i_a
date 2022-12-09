@@ -22,11 +22,11 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: lr3configmap
-                  key: "Ilya German"
+                  key: username
             - name: REACT_APP_COMPANY_NAME
               valueFrom:
                 configMapKeyRef:
                   name: lr3configmap
-                  key: "ITMO"
+                  key: company
           ports:
             - containerPort: 3000          
