@@ -9,7 +9,7 @@ spec:
     app: lab3
   ports:
     - protocol: TCP
-      port: 9090
+      port: 3000
       targetPort: 3000
   type: NodePort    
       
