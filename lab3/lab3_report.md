@@ -28,6 +28,19 @@ Date of finished:
 9. Пробуем убрать IP address и FQDN из файла hosts
 Получаем следующий результат:
 ![image](https://user-images.githubusercontent.com/116584865/206291348-239a8361-5310-46d1-baf7-eed962b72190.png)
+8.12.22. Преподаватель проверил работу, посоветовал поменять наименование сертификата
+1.1. Генерируем новый сертификат при помощи всё той же утилиты mkcert
+![image](https://user-images.githubusercontent.com/116584865/206763285-34970f63-b482-4833-88fd-60017d57dbfb.png)
+1.2. Получившиеся 2 файла, успешно заспавнившихся в корневой папке windows, используем для создания секрета
+![image](https://user-images.githubusercontent.com/116584865/206763817-417a3176-2387-45a0-8090-73b58ded965d.png)
+1.3. Поправляем ингресс, ставим новое имя хоста и название сикрета
+![image](https://user-images.githubusercontent.com/116584865/206764900-a41d749a-ed90-4300-b72e-469f158d29f1.png)
+1.4. Деплоим ингресс заново и убеждаемся что он изменился 
+![image](https://user-images.githubusercontent.com/116584865/206765273-002cce95-7f70-4c15-99e0-166c3fdff410.png)
+1.5. Прописываем в hosts IP адрес и FQDN
+![image](https://user-images.githubusercontent.com/116584865/206766472-190fcd25-7014-4230-811f-3a12882bfd0a.png)
+1.6. 
+
 Схема организации:
 ![image](https://user-images.githubusercontent.com/116584865/206495244-70a969db-75ad-435d-9cc7-dbce6a8974fb.png)
 
