@@ -38,8 +38,11 @@ Date of finished:
 1.4. Деплоим ингресс заново и убеждаемся что он изменился 
 ![image](https://user-images.githubusercontent.com/116584865/206765273-002cce95-7f70-4c15-99e0-166c3fdff410.png)
 1.5. Прописываем в hosts IP адрес и FQDN
-![image](https://user-images.githubusercontent.com/116584865/206766472-190fcd25-7014-4230-811f-3a12882bfd0a.png)
-1.6. 
+![image](https://user-images.githubusercontent.com/116584865/206839862-48b5c1c3-b492-414a-baab-51509c007eb0.png)
+1.6. Запускаем тунеллирование:
+minikube tunnel
+![image](https://user-images.githubusercontent.com/116584865/206840121-81eecc2f-c724-4445-bd7f-9b6452961f81.png)
+
 
 Схема организации:
 ![image](https://user-images.githubusercontent.com/116584865/206495244-70a969db-75ad-435d-9cc7-dbce6a8974fb.png)
