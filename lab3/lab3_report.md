@@ -42,8 +42,21 @@ Date of finished:
 1.6. Запускаем тунеллирование:
 minikube tunnel
 ![image](https://user-images.githubusercontent.com/116584865/206840121-81eecc2f-c724-4445-bd7f-9b6452961f81.png)
-
-
+1.1.1 Новый сертфикат
+![image](https://user-images.githubusercontent.com/116584865/206840644-b9ac0cc6-7253-4912-9085-ff2fd84e0765.png)
+1.1.2 Создаём сикрет на основе нового сертификата и ключа
+![image](https://user-images.githubusercontent.com/116584865/206840739-8adb9334-e9b9-4558-9394-449846bea0db.png)
+1.1.3 Поправляем и заного деплоим ингресс
+![image](https://user-images.githubusercontent.com/116584865/206840846-1ff88e1d-938f-4f43-bfcb-5c3669a9e510.png)
+![image](https://user-images.githubusercontent.com/116584865/206840887-8419b677-7330-43f9-a401-b0539f9000dc.png)
+1.1.4 Редактируем файл hosts
+![image](https://user-images.githubusercontent.com/116584865/206840951-09c3cb9e-8d16-413f-b640-4ff88396f359.png)
+1.1.5 Запускаем тунеллирование 
+minikube tunnel
+![image](https://user-images.githubusercontent.com/116584865/206841076-e6a366c7-a094-418c-bab1-be9111a952de.png)
+React App запускается, но экран белый. Это связано с тем, что React App криво работает на windows.
+Сертификат выглядит следующим образом:
+![image](https://user-images.githubusercontent.com/116584865/206841119-a021151a-0c59-49bb-930a-3d4ea5ab7e8c.png)
 Схема организации:
 ![image](https://user-images.githubusercontent.com/116584865/206495244-70a969db-75ad-435d-9cc7-dbce6a8974fb.png)
 
