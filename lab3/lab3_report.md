@@ -40,6 +40,8 @@ Date of finished:
 1.5. Прописываем в hosts IP адрес и FQDN
 ![image](https://user-images.githubusercontent.com/116584865/206839862-48b5c1c3-b492-414a-baab-51509c007eb0.png)
 1.6. Запускаем тунеллирование:
+minikube tunnel
+![image](https://user-images.githubusercontent.com/116584865/206840121-81eecc2f-c724-4445-bd7f-9b6452961f81.png)
 
 
 Схема организации:
