@@ -5,10 +5,10 @@ metadata:
 spec:
   tls:
   - hosts:
-      - ilyalr3
+      - ilyalr3.cloud
     secretName: mkcert
   rules:
-  - host: ilyalr3
+  - host: ilyalr3.cloud
     http:
       paths:
       - path: /
