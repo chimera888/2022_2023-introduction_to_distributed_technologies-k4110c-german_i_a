@@ -14,5 +14,6 @@ Date of finished:
 ![image](https://user-images.githubusercontent.com/116584865/208436620-500e1470-4b67-49ae-8daf-339d0fd4c21b.png)
 3. Назначаем IP-адреса
 ![image](https://user-images.githubusercontent.com/116584865/208692026-cacd8a4c-2782-4be0-a7b6-5fdbedd958fa.png)
+![image](https://user-images.githubusercontent.com/116584865/208743184-78aeb6f1-ea47-4cde-8f6b-2c0e804a78db.png)
 
 
