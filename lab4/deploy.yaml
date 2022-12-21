@@ -15,7 +15,7 @@ spec:
         app: lab4
     spec:
       containers:
-        - image: ifilyaninitmo/itdt-contained-frontend:master
+        - image: docker.io/ifilyaninitmo/itdt-contained-frontend:master
           name: itdt-contained-frontend
           ports:
             - containerPort: 3000
