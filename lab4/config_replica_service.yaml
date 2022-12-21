@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: container-pod
-          image: ifilyaninitmo/itdt-contained-frontend:master
+          image: docker.io/ifilyaninitmo/itdt-contained-frontend:master
           env:
             - name: REACT_APP_USERNAME
               valueFrom:
