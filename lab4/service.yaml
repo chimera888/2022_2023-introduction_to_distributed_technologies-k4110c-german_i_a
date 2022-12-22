@@ -8,7 +8,7 @@ spec:
   type: LoadBalancer
   ports:
     - name: http
-      port: 3000
+      port: 9090
       protocol: TCP
       targetPort: 3000
   selector:
