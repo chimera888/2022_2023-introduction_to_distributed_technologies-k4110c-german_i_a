@@ -7,21 +7,33 @@ Author: German Ilya Andreevich
 Lab: Lab4
 Date of create: 03.12.2022
 Date of finished: 
-1. При запуске minikube устанавливаем плагин CNI=calico и режим работы Multi-Node Clusters одновеременно, разворачиваем 2 ноды
-![image](https://user-images.githubusercontent.com/116584865/208431995-3b975a46-8b1d-49a4-b879-34e6e9d95ffe.png)
-2. Проверяем работу CNI плагина Calico и количество нод
-![image](https://user-images.githubusercontent.com/116584865/208436313-70f04dec-462f-4d2d-b3df-ed9c92db25e9.png)
-![image](https://user-images.githubusercontent.com/116584865/208436620-500e1470-4b67-49ae-8daf-339d0fd4c21b.png)
-Назначаем IP-адреса
-3. Добавление labels для нод:
-![image](https://user-images.githubusercontent.com/116584865/208692026-cacd8a4c-2782-4be0-a7b6-5fdbedd958fa.png)
-4. Деплоим манифест для создания calico пода
-![image](https://user-images.githubusercontent.com/116584865/208743184-78aeb6f1-ea47-4cde-8f6b-2c0e804a78db.png)
-5. Деплоим манифест написанный для IP-пулов
-![image](https://user-images.githubusercontent.com/116584865/208745434-0718bccd-fb69-4e08-8891-11a2077144fe.png)
-Проверяем результат, деплоим манифесты для конфига, сервиса и репликасет
-![image](https://user-images.githubusercontent.com/116584865/208886733-17ab1088-bc7e-4547-91f1-67c24747a3e3.png)
-6. Проверяем, понимаем что образ контейнера не ложится на наши поды
-![image](https://user-images.githubusercontent.com/116584865/208899584-e35c1338-8463-4837-8185-3809829fc0b0.png)
+## Ход работы
+1. Устанавливаем плагин Calico.
+- Прежде чем запустить minikube, устанавливаем плагин `CNI=Calico`, команда `minikube start --network-plugin=cni --cni=calico` позволяет создать single-node minikube cluster, нам же нужно 2 ноды. Чтобы их создать, потребуется команда `minikube start --nodes 2 -p multinode-demo`. Теперь объединяем их в одно
+- `minikube start --driver=docker -p multinode-cluster --network-plugin=cni --cni=calico --nodes 2 --kubernetes-version=v1.24.0`
+- Проверяем количество созданных нод при помощи команды `kubectl get nodes`:
+![image](https://user-images.githubusercontent.com/116584865/209129524-fef79199-5999-4c30-bd99-228b21372c80.png)
+ - Проверяем работу CNI плагина Calico:
+ - При помощи команды `kubectl get po -n kube-system -l=k8s-app=calico-node` видим созданные поды с меткой calico-node
+ ![image](https://user-images.githubusercontent.com/116584865/209135309-bc77d3ab-2fe8-4c99-8775-abe340469e9a.png)
+ - Для проверки работы Calico мы попробуем одну из функций под названием `IPAM Plugin`
+ - Для проверки режима IPAM для запущеных ранее нод указываем label по признаку стойки или географического расположения
+ Соглавно инструкции по назначению ip-адресов удаляем дефолтный ippool, убеждаемся что никаких айпи-пулов не осталось:
+ ![image](https://user-images.githubusercontent.com/116584865/209140984-c6cde9c0-df5e-4cdb-9ada-593e9470810f.png)
+- Для ранее запущенных нод добавляем labels:
+![image](https://user-images.githubusercontent.com/116584865/209142961-97ee54d9-d3b6-42e9-b4c2-98ac1413f98e.png)
+- Создаём IP pool для каждого rack
+![image](https://user-images.githubusercontent.com/116584865/209145027-3a4e4e60-5dcd-48f8-b8e6-7db02886c32b.png)
+- Чтобы взаимодействовать с calico, скачиваем его yaml образ с офф.сайта и деплоим в миникуб
+![image](https://user-images.githubusercontent.com/116584865/209146157-a56f37ac-29b7-4edd-9b87-4acdb7277dd7.png)
+- Далее, взаимодействуя с calico через неймспейс kube-system, разворачиваем ip pools
+![image](https://user-images.githubusercontent.com/116584865/209148975-141e4dc6-789f-4094-a309-521b6330b974.png)
+# Проверка назначения IP адресов
+Для проверки развернём тестоый деплоймент с двумя репликами, как в предыдущих лабах
+- Создаём деплой, и сервис, при помощи команды `kubectl get po -o wide` проверяем поды
+![image](https://user-images.githubusercontent.com/116584865/209151512-e3da4313-8a96-4230-b8f1-97bb146af7df.png)
+
+
+
 
 
