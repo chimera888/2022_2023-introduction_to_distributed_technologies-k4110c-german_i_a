@@ -12,11 +12,16 @@ Date of finished:
 2. Проверяем работу CNI плагина Calico и количество нод
 ![image](https://user-images.githubusercontent.com/116584865/208436313-70f04dec-462f-4d2d-b3df-ed9c92db25e9.png)
 ![image](https://user-images.githubusercontent.com/116584865/208436620-500e1470-4b67-49ae-8daf-339d0fd4c21b.png)
-3. Назначаем IP-адреса
+Назначаем IP-адреса
+3. Добавление labels для нод:
 ![image](https://user-images.githubusercontent.com/116584865/208692026-cacd8a4c-2782-4be0-a7b6-5fdbedd958fa.png)
+4. Деплоим манифест для создания calico пода
 ![image](https://user-images.githubusercontent.com/116584865/208743184-78aeb6f1-ea47-4cde-8f6b-2c0e804a78db.png)
+5. Деплоим манифест написанный для IP-пулов
 ![image](https://user-images.githubusercontent.com/116584865/208745434-0718bccd-fb69-4e08-8891-11a2077144fe.png)
-![image](https://user-images.githubusercontent.com/116584865/208745756-0bd6b90e-c12e-47e9-99dd-e5b1177878da.png)
+Проверяем результат, деплоим манифесты для конфига, сервиса и репликасет
 ![image](https://user-images.githubusercontent.com/116584865/208886733-17ab1088-bc7e-4547-91f1-67c24747a3e3.png)
+6. Проверяем, понимаем что образ контейнера не ложится на наши поды
+![image](https://user-images.githubusercontent.com/116584865/208899584-e35c1338-8463-4837-8185-3809829fc0b0.png)
 
 
