@@ -1,3 +1,4 @@
+```
 University: [ITMO University](https://itmo.ru/ru/)
 Faculty: [FICT](https://fict.itmo.ru)
 Course: [Introduction to distributed technologies](https://github.com/itmo-ict-faculty/introduction-to-distributed-technologies)
@@ -7,6 +8,7 @@ Author: German Ilya Andreevich
 Lab: Lab4
 Date of create: 03.12.2022
 Date of finished: 
+```
 ## Ход работы
 1. Устанавливаем плагин Calico.
 - Прежде чем запустить minikube, устанавливаем плагин `CNI=Calico`, команда `minikube start --network-plugin=cni --cni=calico` позволяет создать single-node minikube cluster, нам же нужно 2 ноды. Чтобы их создать, потребуется команда `minikube start --nodes 2 -p multinode-demo`. Теперь объединяем их в одно
